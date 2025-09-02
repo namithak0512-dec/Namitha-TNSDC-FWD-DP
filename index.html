@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Namitha K - Digital Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <h2>Namitha K</h2>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#drawing">Drawing</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HOME -->
+  <section id="home">
+    <div class="home-container">
+      <!-- Profile Photo -->
+      <img id="profile-photo"
+           src="https://via.placeholder.com/180"
+           alt="Namitha K"
+           class="profile-photo" />
+      
+      <!-- Upload Label -->
+      <label for="upload-photo" class="upload-label">Edit & Customize Profile Photo</label>
+      <input type="file" id="upload-photo" accept="image/*" hidden />
+
+      <div>
+        <h1>Hi, I'm <span style="color:#f87171;">Namitha K</span></h1>
+        <p class="typing" id="typing"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a BCA 2nd year student at Sri Aravindar Arts and Science College (Annamalai University).
+       I am passionate about technology, web development, and love creative arts like drawing.</p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">Python</div>
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React</div>
+      <div class="skill">GitHub</div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section id="certificates">
+    <h2>Certificates</h2>
+    <div class="certificates">
+      <div class="certificate" onclick="openModal('Python Basics Certificate')">Python Basics</div>
+      <div class="certificate" onclick="openModal('Web Development Certificate')">Web Development</div>
+      <div class="certificate" onclick="openModal('Drawing Achievement')">Drawing</div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3 id="modal-title">Certificate</h3>
+      <p>This is a placeholder for the selected certificate.</p>
+    </div>
+  </div>
+
+  <!-- DRAWING SECTION -->
+  <section id="drawing">
+    <h2>Drawing</h2>
+    <div class="sports">
+      <img src="https://via.placeholder.com/200x200?text=Drawing+1" alt="Drawing 1" />
+      <img src="https://via.placeholder.com/200x200?text=Drawing+2" alt="Drawing 2" />
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-links">
+      <p>Email: <a href="mailto:namitha.k0512@gmail.com">namitha.k0512@gmail.com</a></p>
+      <p>Phone: <a href="tel:9043077243">9043077243</a></p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Namitha K. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
